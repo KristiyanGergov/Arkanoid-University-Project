@@ -11,7 +11,7 @@ public class Paddle extends Sprite implements Commons {
 
     public Paddle() {
 
-        ImageIcon ii = new ImageIcon("paddle.gif");
+        ImageIcon ii = new ImageIcon("Images/paddle.gif");
         image = ii.getImage();
 
         i_width = image.getWidth(null);
