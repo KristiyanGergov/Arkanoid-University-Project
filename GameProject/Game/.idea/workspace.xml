@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="7ecfee9c-1c86-4366-ae37-6b047df0de70" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/ball.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/brick.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/paddle.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Images/blueBrick.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ball.java" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Board.java" afterPath="" />
@@ -17,6 +14,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/com/Ball.java" afterPath="$PROJECT_DIR$/src/game/com/Ball.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/com/Brick.java" afterPath="$PROJECT_DIR$/src/game/com/Brick.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/game/com/Paddle.java" afterPath="$PROJECT_DIR$/src/game/com/Paddle.java" />
     </list>
     <ignored path="Game.iws" />
@@ -119,12 +117,19 @@
       <file leaf-file-name="Brick.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/game/com/Brick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47638604">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.8377823">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blueBrick.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Images/blueBrick.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -920,11 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/paddle.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Images/ball.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -945,10 +945,20 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Images/paddle.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Images/blueBrick.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/com/Brick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47638604">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.8377823">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

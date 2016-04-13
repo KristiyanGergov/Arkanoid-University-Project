@@ -13,7 +13,7 @@ public class Brick extends Sprite {
         this.x = x;
         this.y = y;
 
-        ImageIcon ii = new ImageIcon("Images/brick.gif");
+        ImageIcon ii = new ImageIcon("Images/blueBrick.png");
         image = ii.getImage();
 
         i_width = image.getWidth(null);
