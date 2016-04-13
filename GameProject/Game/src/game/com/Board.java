@@ -10,8 +10,10 @@ import java.awt.RenderingHints;
 import java.awt.Toolkit;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.FileHandler;
 import javax.swing.JPanel;
 
 public class Board extends JPanel implements Commons {
@@ -155,6 +157,7 @@ public class Board extends JPanel implements Commons {
             }
 
             if (j == N_OF_BRICKS) {
+
                 message = "Victory";
                 stopGame();
             }
