@@ -1,17 +1,19 @@
 package game.com;
 
 import javax.swing.ImageIcon;
+import java.awt.*;
 
 public class Brick extends Sprite {
 
     private boolean destroyed;
+
 
     public Brick(int x, int y) {
 
         this.x = x;
         this.y = y;
 
-        ImageIcon ii = new ImageIcon("brick.png");
+        ImageIcon ii = new ImageIcon("Images/brick.gif");
         image = ii.getImage();
 
         i_width = image.getWidth(null);

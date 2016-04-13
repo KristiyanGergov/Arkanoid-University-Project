@@ -12,7 +12,7 @@ public class Ball extends Sprite implements Commons {
         xdir = 1;
         ydir = -1;
 
-        ImageIcon ii = new ImageIcon("ball.png");
+        ImageIcon ii = new ImageIcon("Images/ball.gif");
         image = ii.getImage();
 
         i_width = image.getWidth(null);
