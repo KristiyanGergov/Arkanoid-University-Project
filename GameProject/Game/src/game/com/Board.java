@@ -87,11 +87,11 @@ public class Board extends JPanel {
 
     private void drawObjects(Graphics2D g2d) {
 
-        try {
-            g2d.drawImage(ImageIO.read(getClass().getResource("/bckgr.jpg")), 0, 0, 300, 400, null);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            g2d.drawImage(ImageIO.read(getClass().getResource("/bckgr.jpg")), 0, 0, 300, 400, null);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
         g2d.drawImage(ball.getImage(), ball.getX(), ball.getY(),
                 ball.getWidth(), ball.getHeight(), this);
         g2d.drawImage(paddle.getImage(), paddle.getX(), paddle.getY(),
