@@ -10,8 +10,10 @@ import java.awt.RenderingHints;
 import java.awt.Toolkit;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
+import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
 public class Board extends JPanel {
@@ -85,6 +87,11 @@ public class Board extends JPanel {
 
     private void drawObjects(Graphics2D g2d) {
 
+        try {
+            g2d.drawImage(ImageIO.read(getClass().getResource("/bckgr.jpg")), 0, 0, 300, 400, null);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         g2d.drawImage(ball.getImage(), ball.getX(), ball.getY(),
                 ball.getWidth(), ball.getHeight(), this);
         g2d.drawImage(paddle.getImage(), paddle.getX(), paddle.getY(),

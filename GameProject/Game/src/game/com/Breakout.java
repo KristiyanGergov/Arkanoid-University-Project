@@ -2,7 +2,7 @@ package game.com;
 
 import javax.swing.*;
 
-class Breakout extends JFrame {
+public class Breakout extends JFrame {
 
     public Breakout() {
 
