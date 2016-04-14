@@ -1,7 +1,0 @@
-package game.com;
-
-public class FileHandle {
-    public static void main(String[] args) {
-
-           }
-}
