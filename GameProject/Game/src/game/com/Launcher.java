@@ -7,7 +7,7 @@ public class Launcher {
 
         EventQueue.invokeLater(() -> {
             Breakout game = new Breakout();
-            game.setVisible(true);
+            //game.setVisible(true);
         });
     }
 }

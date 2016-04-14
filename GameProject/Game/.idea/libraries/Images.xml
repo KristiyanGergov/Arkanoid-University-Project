@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="Images">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/images" />
+      <root url="file://$PROJECT_DIR$/Images" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

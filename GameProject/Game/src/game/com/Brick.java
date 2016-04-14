@@ -11,7 +11,7 @@ public class Brick extends Sprite {
         this.x = x;
         this.y = y;
 
-        ImageIcon ii = new ImageIcon("images/blueBrick.png");
+        ImageIcon ii = new ImageIcon("images/blueBrick2.png");
         image = ii.getImage();
 
         imageWidth = image.getWidth(null);
