@@ -10,13 +10,11 @@ import java.awt.RenderingHints;
 import java.awt.Toolkit;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.logging.FileHandler;
 import javax.swing.JPanel;
 
-public class Board extends JPanel implements Commons {
+public class Board extends JPanel {
 
     private Timer timer;
     private String message = "Game Over";
@@ -35,10 +33,10 @@ public class Board extends JPanel implements Commons {
         addKeyListener(new TAdapter());
         setFocusable(true);
 
-        bricks = new Brick[N_OF_BRICKS];
+        bricks = new Brick[Constants.N_OF_BRICKS];
         setDoubleBuffered(true);
         timer = new Timer();
-        timer.scheduleAtFixedRate(new ScheduleTask(), DELAY, PERIOD);
+        timer.scheduleAtFixedRate(new ScheduleTask(), Constants.DELAY, Constants.PERIOD);
     }
 
     @Override
@@ -92,7 +90,7 @@ public class Board extends JPanel implements Commons {
         g2d.drawImage(paddle.getImage(), paddle.getX(), paddle.getY(),
                 paddle.getWidth(), paddle.getHeight(), this);
 
-        for (int i = 0; i < N_OF_BRICKS; i++) {
+        for (int i = 0; i < Constants.N_OF_BRICKS; i++) {
             if (!bricks[i].isDestroyed()) {
                 g2d.drawImage(bricks[i].getImage(), bricks[i].getX(),
                         bricks[i].getY(), bricks[i].getWidth(),
@@ -109,8 +107,8 @@ public class Board extends JPanel implements Commons {
         g2d.setColor(Color.BLACK);
         g2d.setFont(font);
         g2d.drawString(message,
-                (Commons.WIDTH - metr.stringWidth(message)) / 2,
-                Commons.WIDTH / 2);
+                (Constants.WIDTH - metr.stringWidth(message)) / 2,
+                Constants.WIDTH / 2);
     }
 
     private class TAdapter extends KeyAdapter {
@@ -146,17 +144,17 @@ public class Board extends JPanel implements Commons {
 
     private void checkCollision() {
 
-        if (ball.getRect().getMaxY() > Commons.BOTTOM_EDGE) {
+        if (ball.getRect().getMaxY() > Constants.BOTTOM_EDGE) {
             stopGame();
         }
 
-        for (int i = 0, j = 0; i < N_OF_BRICKS; i++) {
+        for (int i = 0, j = 0; i < Constants.N_OF_BRICKS; i++) {
 
             if (bricks[i].isDestroyed()) {
                 j++;
             }
 
-            if (j == N_OF_BRICKS) {
+            if (j == Constants.N_OF_BRICKS) {
 
                 message = "Victory";
                 stopGame();
@@ -199,7 +197,7 @@ public class Board extends JPanel implements Commons {
             }
         }
 
-        for (int i = 0; i < N_OF_BRICKS; i++) {
+        for (int i = 0; i < Constants.N_OF_BRICKS; i++) {
 
             if ((ball.getRect()).intersects(bricks[i].getRect())) {
 

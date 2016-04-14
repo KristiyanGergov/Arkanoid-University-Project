@@ -1,23 +1,21 @@
 package game.com;
 
 import javax.swing.ImageIcon;
-import java.awt.*;
 
 public class Brick extends Sprite {
 
     private boolean destroyed;
-
 
     public Brick(int x, int y) {
 
         this.x = x;
         this.y = y;
 
-        ImageIcon ii = new ImageIcon("Images/blueBrick.png");
+        ImageIcon ii = new ImageIcon("images/blueBrick.png");
         image = ii.getImage();
 
-        i_width = image.getWidth(null);
-        i_heigth = image.getHeight(null);
+        imageWidth = image.getWidth(null);
+        imageHeight = image.getHeight(null);
 
         destroyed = false;
     }

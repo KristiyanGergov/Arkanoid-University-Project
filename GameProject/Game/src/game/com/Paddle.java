@@ -1,11 +1,9 @@
 package game.com;
 
-import game.com.Commons;
-
 import java.awt.event.KeyEvent;
 import javax.swing.ImageIcon;
 
-public class Paddle extends Sprite implements Commons {
+public class Paddle extends Sprite {
 
     private int dx;
 
@@ -14,8 +12,8 @@ public class Paddle extends Sprite implements Commons {
         ImageIcon ii = new ImageIcon("Images/paddle.gif");
         image = ii.getImage();
 
-        i_width = image.getWidth(null);
-        i_heigth = image.getHeight(null);
+        imageWidth = image.getWidth(null);
+        imageHeight = image.getHeight(null);
 
         resetState();
     }
@@ -28,8 +26,8 @@ public class Paddle extends Sprite implements Commons {
             x = 0;
         }
 
-        if (x >= WIDTH - i_width) {
-            x = WIDTH - i_width;
+        if (x >= Constants.WIDTH - imageWidth) {
+            x = Constants.WIDTH - imageWidth;
         }
     }
 
@@ -61,7 +59,7 @@ public class Paddle extends Sprite implements Commons {
 
     private void resetState() {
 
-        x = INIT_PADDLE_X;
-        y = INIT_PADDLE_Y;
+        x = Constants.INIT_PADDLE_X;
+        y = Constants.INIT_PADDLE_Y;
     }
 }

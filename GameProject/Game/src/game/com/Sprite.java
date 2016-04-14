@@ -7,8 +7,8 @@ public class Sprite {
 
     protected int x;
     protected int y;
-    protected int i_width;
-    protected int i_heigth;
+    protected int imageWidth;
+    protected int imageHeight;
     protected Image image;
 
     public void setX(int x) {
@@ -28,11 +28,11 @@ public class Sprite {
     }
 
     public int getWidth() {
-        return i_width;
+        return imageWidth;
     }
 
     public int getHeight() {
-        return i_heigth;
+        return imageHeight;
     }
 
     Image getImage() {

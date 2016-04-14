@@ -2,7 +2,7 @@ package game.com;
 
 import javax.swing.ImageIcon;
 
-public class Ball extends Sprite implements Commons {
+public class Ball extends Sprite {
 
     private int xdir;
     private int ydir;
@@ -15,8 +15,8 @@ public class Ball extends Sprite implements Commons {
         ImageIcon ii = new ImageIcon("Images/ball.gif");
         image = ii.getImage();
 
-        i_width = image.getWidth(null);
-        i_heigth = image.getHeight(null);
+        imageWidth = image.getWidth(null);
+        imageHeight = image.getHeight(null);
 
         resetState();
     }
@@ -30,7 +30,7 @@ public class Ball extends Sprite implements Commons {
             setXDir(1);
         }
 
-        if (x == Commons.WIDTH - i_width) {
+        if (x == Constants.WIDTH - imageWidth) {
             setXDir(-1);
         }
 
@@ -41,8 +41,8 @@ public class Ball extends Sprite implements Commons {
 
     private void resetState() {
 
-        x = Commons.INIT_BALL_X;
-        y = Commons.INIT_BALL_Y;
+        x = Constants.INIT_BALL_X;
+        y = Constants.INIT_BALL_Y;
     }
 
     public void setXDir(int x) {
