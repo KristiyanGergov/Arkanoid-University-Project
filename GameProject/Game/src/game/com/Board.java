@@ -89,7 +89,7 @@ public class Board extends JPanel {
     private void drawObjects(Graphics2D g2d) {
 
         try {
-            g2d.drawImage(ImageIO.read(getClass().getResource("/bckgr.png")), 0, 0, 300, 400, null);
+            g2d.drawImage(ImageIO.read(getClass().getResource("/bckgr.jpg")), 0, 0, 300, 400, null);
         } catch (IOException e) {
             e.printStackTrace();
         }
