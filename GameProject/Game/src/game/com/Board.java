@@ -24,6 +24,7 @@ public class Board extends JPanel {
     private Paddle paddle;
     private Brick bricks[];
     private boolean ingame = true;
+    private int points = 0;
 
     public Board() {
 
@@ -116,6 +117,9 @@ public class Board extends JPanel {
         g2d.drawString(message,
                 (Constants.WIDTH - metr.stringWidth(message)) / 2,
                 Constants.WIDTH / 2);
+        g2d.drawString(String.format("Points: %d", this.points),
+                (Constants.WIDTH - metr.stringWidth(message)) / 2,
+                Constants.WIDTH / 2 + 30);
     }
 
     private class TAdapter extends KeyAdapter {
@@ -232,6 +236,7 @@ public class Board extends JPanel {
                     }
 
                     bricks[i].setDestroyed(true);
+                    points += 10;
                 }
             }
         }
