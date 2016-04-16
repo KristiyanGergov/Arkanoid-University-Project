@@ -1,13 +1,6 @@
 package game.com;
 
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.FontMetrics;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
-import java.awt.RenderingHints;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
@@ -61,6 +54,7 @@ public class Board extends JPanel {
                 k++;
             }
         }
+
     }
 
     @Override
@@ -78,6 +72,7 @@ public class Board extends JPanel {
         if (ingame) {
 
             drawObjects(g2d);
+
         } else {
 
             gameFinished(g2d);
@@ -93,6 +88,7 @@ public class Board extends JPanel {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
         g2d.drawImage(ball.getImage(), ball.getX(), ball.getY(),
                 ball.getWidth(), ball.getHeight(), this);
         g2d.drawImage(paddle.getImage(), paddle.getX(), paddle.getY(),
@@ -117,8 +113,9 @@ public class Board extends JPanel {
         g2d.drawString(message,
                 (Constants.WIDTH - metr.stringWidth(message)) / 2,
                 Constants.WIDTH / 2);
-        g2d.drawString(String.format("Points: %d", this.points),
-                (Constants.WIDTH - metr.stringWidth(message)) / 2,
+        String pointsMessage = String.format("Points: %d", points);
+        g2d.drawString(String.format(pointsMessage),
+                (Constants.WIDTH - metr.stringWidth(pointsMessage)) / 2,
                 Constants.WIDTH / 2 + 30);
     }
 
